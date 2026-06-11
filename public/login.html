@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="panel">
+  <h1 class="primary">NovaLine Control Center</h1>
+  <input id="user" placeholder="Username">
+  <input id="pass" placeholder="Password" type="password">
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login(){
+  const user = document.getElementById("user").value;
+
+  if(user.includes("owner")){
+    localStorage.setItem("role","owner");
+  } else {
+    localStorage.setItem("role","staff");
+  }
+
+  window.location = "dashboard.html";
+}
+</script>
+
+</body>
+</html>
