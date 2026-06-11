@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #05050A;
+  color: white;
+}
+
+/* Glass Panels */
+.panel {
+  background: rgba(20, 20, 35, 0.6);
+  backdrop-filter: blur(25px);
+  border-radius: 14px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+}
+
+/* Purple Accent */
+.primary {
+  color: #7C3AED;
+}
+
+.glow:hover {
+  box-shadow: 0 0 20px #A855F7;
+  transition: 0.3s;
+}
+
+/* Dashboard Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #7C3AED, #A855F7);
+  width: 0%;
+  transition: 0.5s;
+}
